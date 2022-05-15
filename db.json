@@ -1,0 +1,19 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Have Tea",
+      "status": false
+    },
+    {
+      "id": 2,
+      "title": "Have Coffee",
+      "status": false
+    },
+    {
+      "id": 3,
+      "title": "Learn React",
+      "status": false
+    }
+  ]
+}
