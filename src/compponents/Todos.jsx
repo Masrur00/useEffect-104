@@ -5,7 +5,7 @@ export const Todos = () => {
   const [text, setText] = useState([]);
   const [p,setPage]  = useState(1);
   useEffect(() => {
-    getData();
+    getData();    
   }, [p]);
 
   const getData = async () => {

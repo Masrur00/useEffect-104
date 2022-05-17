@@ -1,14 +1,22 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import logo from './logo.svg'
 import './App.css'
 import { Todos } from './compponents/Todos'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [show, setShow] = useState(true);
+  useEffect(()=>{
+    return ()=>{
+      console.log("Unmounting Todos component")
+   }
+  })
 
   return (
     <div className="App">     
-     <Todos />
+     { (show) ? <Todos /> : null }     
+     <button onClick={()=>{
+       setShow(!show)
+     }}>{ (show) ? "Hide" : "Show" }</button>
     </div>
   )
 }
